@@ -1,0 +1,107 @@
+Nothing
+
+router application
+
+steps to implementation
+
+when we use react router related features we dont use app.jsx use main.jsx
+
+<Outlet />
+layout
+
+link  =>
+nav link =>
+
+RouterProvider,createBrowserRouter
+
+path element child
+createRoutesFromElement
+
+layout structure
+
+useParams
+
+useLoaderData
+
+
+
+
+
+flow
+
+create components separate folder and file
+code component inside files
+export it
+if we not use router you import fille in app.jsx
+in this case we use router so we should import file inside main.jsx
+
+1st method
+ 
+in mani.jsx, we import components files
+then import RouterProvider and createBrowserRouter  from react-rout-dom
+
+remove this <App/> inside from StrictMode
+write <RouterProvider router = {router}
+once you done creating router provider you start create router
+
+then create router
+
+const router = createBrowserRouter([
+
+{
+	path:"/"
+	element:"<Header/>"
+},
+{
+	path:"home"
+	element:"<Home/>"
+},
+{},
+
+])
+
+
+       path: '/',
+//     element: <Layout/>,
+//     children: [
+//       {
+//         path: "",
+//         element: <Home />
+//       },]
+
+see it redirect page through the path (endpoint)
+
+it not arranging some components in one page
+if you edit multi component page you should edit inside components file
+
+
+import { Link } from 'react-router-dom';
+
+<Link
+className="inline-flex text-white items-center px-6 py-3 font-medium bg-green-700 rounded-lg hover:opacity-75"
+
+to="/" > Download now </Link>
+ 
+
+link, we can relocate to other path (page) using link in react-route-dom
+important is ( to="/")  we assign the path
+
+link => link to relocated page using (path)
+NavLink => nav link we can show the active page location through this we assign isactive or not in class name
+
+
+2st method
+
+we use createRoutesFromElement
+
+const router = createBrowserRouter(
+	createRoutesFromElement(
+
+		<Router path='/' element={<Home/>}>
+
+		<Router path='login' element={<Login/>}
+		<Router path='signup' element={<SignUp/>}
+		<Router path='hero1' element={<HeroOne/>}
+		<Router/>
+)
+)
