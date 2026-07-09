@@ -4,6 +4,7 @@
 import React from "react";
 import Head from "../components/Head";
 import Counter from "../components/Counter";
+import Event_Handling from "../Events/Event_Handling_01";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
       />
 
       <Counter />
+
+      <Event_Handling />
 
       <h1>From App.js</h1>
       <h1 className="">Implementation of React with Vite & TailwindCss</h1>
