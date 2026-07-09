@@ -8,7 +8,8 @@ const Event_Handling = () => {
     console.log("button clicked console message");
   };
 
-
+// - Input Change Events (onChange)
+    
 
   return (
     <div>
