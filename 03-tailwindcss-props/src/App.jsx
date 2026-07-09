@@ -28,7 +28,7 @@ const App = () => {
     </div>
     {/* popup */}
 
-      <div className="mx-auto flex flex-wrap max-w-mx gap-20">
+      <div className="mx-auto flex flex-wrap max-w-mx gap-20">     
     {/* card start */}
     <Card username="Tony" title = "Iron Man" btnText="click me" codeNo ="02" imgLink ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlLMhgxgBekrUCej-ZS4VCPalsj3V6EbfQw&s"/>
     <Card username="Petter Parker" title = "Spider Man" btnText="click me" codeNo ="255" imgLink ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzuYmyoBsx9N7PpZEphpRESnm8RDeLKRapcw&s" />
