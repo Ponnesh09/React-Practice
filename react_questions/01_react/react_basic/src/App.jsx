@@ -12,6 +12,7 @@ import Condition_02 from "../Conditionally_Render/Condition_02";
 import Condition_03 from "../Conditionally_Render/Condition_03";
 import Condition_04 from "../Conditionally_Render/Condition_04";
 import List_Items from "../components/List_Items";
+import ShoppingCart from "../components/ShoppingCart";
 
 const App = () => {
   return (
@@ -31,7 +32,7 @@ const App = () => {
       <Condition_03 />
       <Condition_04 />
       <List_Items />
-
+      <ShoppingCart />
       <h1>From App.js</h1>
       <h1 className="">Implementation of React with Vite & TailwindCss</h1>
     </div>
