@@ -8,6 +8,7 @@ const Condition_01 = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
   return (
     <div>
+        {/* If isLoggedIn is true, show Logout, otherwise show Login */}
       {isLoggedIn ? <button>Log out</button> : <button>log in</button>}
     </div>
   )
