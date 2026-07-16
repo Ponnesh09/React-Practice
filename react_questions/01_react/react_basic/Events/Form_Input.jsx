@@ -4,10 +4,10 @@ import React, { useState } from 'react'
 
 const Form_Input = () => {
   
-      const [text, setTest] = useState("")
+      const [text, setText] = useState("")
 
       let handleChange = (e)=>{
-        setTest(e.target.value)
+        setText(e.target.value)
       }
   return (
     <div>
