@@ -10,7 +10,7 @@ const App = () => {
         <Use_State />
         <Use_Effect />
         <Use_Ref />
-        <Use_Memo />
+        {/* <Use_Memo /> */}
     </div>
   )
 }
