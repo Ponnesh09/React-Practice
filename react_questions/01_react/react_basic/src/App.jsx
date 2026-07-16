@@ -24,7 +24,6 @@ const App = () => {
         title="Welcome to react"
         subtitle="JSX, Components, Props, and State in one file."
       />
-
       <Counter />
       <Event_Handling />
       <Form_Input />
