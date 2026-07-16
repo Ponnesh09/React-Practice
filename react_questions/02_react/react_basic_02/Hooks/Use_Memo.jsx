@@ -1,22 +1,19 @@
-import React, { useState } from 'react'
-import { useMemo } from 'react'
+import React, { useMemo } from 'react'
 
-const Use_Memo = ({items}) => {
-    const [filter, setFilter]= useState("")
+const Use_Memo = ({number}) => {
+  const calculationValue = (num)=>{
 
-    const filteredItem = useMemo(()=>{
-        return items.filter(item => item.includes(filter));
-    },[items, filter])
+    let total = 0
+    for(let i = 0; i< 1000000000; i++){
+      total =+ num;
+      return total
+    }
+  }
 
+  const memoizedValue = useMemo(()=> calculationValue(number),[number])
   return (
     <div>
-      <input type="text" value={filter} onChange={(e)=>setFilter(e.target.value)}/>
-
-      <ul>
-        {filteredItem.map((item, index)=>{
-            <li key={index}>{item}</li>
-        })}
-      </ul>
+      result : {memoizedValue}
     </div>
   )
 }
