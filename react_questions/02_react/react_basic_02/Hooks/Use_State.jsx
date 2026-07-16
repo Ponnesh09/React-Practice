@@ -1,6 +1,6 @@
 // 1. useStateManages local state in a component to track data that changes over time.import React, { useState } from "react";
-
-const Counter = () => {
+import React, { useState } from "react";
+const Use_State = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
@@ -10,4 +10,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default Use_State;
