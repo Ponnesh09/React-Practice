@@ -13,8 +13,10 @@ useEffect(()=>{
 },[])// Empty array means this runs once on mount
 
 return (
-    
-      <div> {data ? data.name : 'Loading....'}</div>
+        
+      <div> 
+        <h1>use Effect</h1>
+        {data ? data.name : 'Loading....'}</div>
 
   )
 }
