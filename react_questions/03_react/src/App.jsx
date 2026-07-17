@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import SearchBar from '../components/SearchBar'
 import ProductList from '../components/ProductList'
+import CounterButton from '../components/CounterButtons'
+import CounterDisplay from '../components/CounterDisplay'
 
 const App = () => {
   const [search, setSearch]= useState('')
@@ -11,7 +13,12 @@ const App = () => {
     "Keyboard",
     "Monitor",
     "Headphone",
+    "apply",
+    "mango",
+    "banana",
   ];
+
+  const [count ,setCount] = useState(0)
 
   return (
     <div>
@@ -26,9 +33,16 @@ const App = () => {
       <ProductList 
       product ={products}
       productSearch={search}
-      
       />
 
+      <CounterButton.jsx 
+      count={count}
+      />
+
+      <CounterDisplay 
+      count={count}
+      setCount={setCount}
+      />
       
     </div>
   )
